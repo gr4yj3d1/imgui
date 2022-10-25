@@ -77,8 +77,7 @@
 #define SDL_VERSIONNUM(X, Y, Z) \
     ((X)*1000 + (Y)*100 + (Z))
 
-#define SDL_VERSION_ATLEAST(X, Y, Z) \
-    (SDL_COMPILEDVERSION >= SDL_VERSIONNUM(X, Y, Z))
+//#define SDL_VERSION_ATLEAST(X, Y, Z) (SDL_COMPILEDVERSION >= SDL_VERSIONNUM(X, Y, Z))
 
 
 #if SDL_VERSION_ATLEAST(2,0,4) && !defined(__EMSCRIPTEN__) && !defined(__ANDROID__) && !(defined(__APPLE__) && TARGET_OS_IOS) && !defined(__amigaos4__)
